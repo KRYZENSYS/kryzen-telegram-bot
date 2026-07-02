@@ -1,0 +1,27 @@
+services:
+  - type: worker
+    name: kryzen-telegram-bot
+    runtime: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: python bot.py
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.0
+      - key: BOT_TOKEN
+        sync: false
+      - key: ADMIN_ID
+        sync: false
+      - key: TARGET_CHANNEL
+        sync: false
+      - key: API_URL
+        value: https://bepulsmm.x404.uz/bot.php
+      - key: AUTO_SERVICE_ID
+        value: "42"
+      - key: AUTO_QUANTITY
+        value: "50"
+      - key: AUTO_INTERVAL
+        value: "10"
+      - key: REQUEST_LIMIT_PER_KEY
+        value: "20"
+    autoDeploy: true
