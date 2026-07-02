@@ -1,0 +1,20 @@
+{
+  "name": "kryzen-telegram-bot",
+  "version": "1.0.0",
+  "description": "KRYZEN SMM Telegram Bot — aiogram 3 asosida",
+  "main": "bot.py",
+  "scripts": {
+    "start": "python bot.py",
+    "dev": "python bot.py"
+  },
+  "keywords": ["telegram", "bot", "aiogram", "smm", "kryzen"],
+  "author": "KRYZENSYS",
+  "license": "MIT",
+  "dependencies": {
+    "aiogram": "^3.13.1",
+    "aiohttp": "^3.10.10"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
